@@ -76,7 +76,6 @@ public:
     void const check_collision_y(Entity* collidable_entities, int collidable_entity_count);
     void const check_collision_x(Entity* collidable_entities, int collidable_entity_count);
     
-    // Overloading our methods to check for only the map
     void const check_collision_y(Map *map);
     void const check_collision_x(Map *map);
     
@@ -142,7 +141,6 @@ public:
     void const set_width(float new_width) {m_width = new_width; }
     void const set_height(float new_height) {m_height = new_height; }
 
-    // Setter for m_walking
     void set_walking(int walking[4][4])
     {
         for (int i = 0; i < 4; ++i)

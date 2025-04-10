@@ -4,7 +4,7 @@
 #include <SDL.h>
 
 void MainMenu::initialise() {
-    m_game_state.next_scene_id = -1; // no transition yet
+    m_game_state.next_scene_id = -1; 
     m_font_texture_id = Utility::load_texture("assets/font1.png");
     m_game_state.player = nullptr;
 }
@@ -12,7 +12,7 @@ void MainMenu::initialise() {
 void MainMenu::update(float delta_time) {
     const Uint8 *keys = SDL_GetKeyboardState(NULL);
     if (keys[SDL_SCANCODE_RETURN]) {
-        m_game_state.next_scene_id = 1; // we'll use 1 for LevelA
+        m_game_state.next_scene_id = 1;
     }
 }
 
